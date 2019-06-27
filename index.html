@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="Stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+        <title>WeeklyDev 1</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.png" class="top_logo">
+        </header>
+        <main>
+            <!--Register section-->
+            <form action="" method="POST">
+                <h2>Register form</h2>
+                <fieldset>
+                    <legend class="hidden">registration</legend>
+                    <!--pierwszy punkt formularza user-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="username">username</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="username" name="user_username" placeholder="Username">
+                    </div>
+                    <!--drugi punkt formularza password-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="password">password</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="password" name="user_password" placeholder="Password">
+                    </div>
+                    <!--trzeci punkt formularza  powtorz password-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="repeat_password">confirm password</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="repeat_password" name="user_repeat_password" placeholder="Confirm Password">
+                    </div>
+                    <!--czwart punkt formularza  email-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="email">email</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <input type="email" id="email" name="user_email" placeholder="Email">
+                    </div>
+                    <!--piaty punkt formularza  location-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="email">location</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <select name="user_location" id="location">
+                            <option value="" disabled selected>Your Location</option>
+                            <option value="Azja">Azja</option>
+                            <option value="Ameryka Południowa">Ameryka Południowa</option>
+                            <option value="Ameryka Północna">Ameryka Północna</option>
+                            <option value="Europa">Europa</option>
+                            <option value="Afryka">Afryka</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                    <!--zgoda-->
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="user_terms" id="terms">
+                        <label for="terms">I have read and accept the terms of use.</label>
+                    </div>
+                    <!--przycisk-->        
+                    <button class="button-block">Sign Up</button>
+                </fieldset>
+
+
+            </form>
+            <!--Send Email FORM-->
+            <form action="" method="POST">
+                <h2>Send Email Form</h2>
+                <fieldset>
+                    <legend class="hidden">send email form</legend>
+                    <!--pierwszy punkt formularza user-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="username">username</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="username" name="user_username" placeholder="Your name">
+                    </div>
+                    <!--drugi punkt formularza  email-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="email">email</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <input type="email" id="email" name="user_email" placeholder="Email">
+                    </div>
+                    <!--Pole TEKSTOWE-->
+                    <textarea  placeholder="Type Your message..."></textarea>
+                    <!--zgoda-->
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="user_mail_copy" id="mail_copy">
+                        <label for="mail_copy">Send a copy to my email.</label>
+                    </div>
+                    <!--PRZYCISK-->
+                    <button class="button-block">Send Email</button>
+                </fieldset>
+            </form>
+            <!--Sig inf FORM-->
+            <form action="" method="POST">
+                <h2>Sign in form</h2>
+                <fieldset>
+                    <legend class="hidden">sign in form</legend>
+                    <!--pierwszy punkt formularza user-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="username">username</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="username" name="user_username" placeholder="Your name">
+                    </div>
+                    <!--drugi punkt formularza password-->
+                    <div class="input-wrapper">
+                        <label class="hidden" for="password">password</label>
+                        <div class="icon-wrapper">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="password" name="user_password" placeholder="Password">
+                    </div>
+                    <!--SEKCJA PRZYCISKOW-->
+                    <div class="button-wrapper">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="user_remember" id="remember">
+                                <label for="remember" >Remember me</label>
+                        </div>
+                        <button id="sign_bt">Sign in</button>
+                    </div>
+                </fieldset>
+            </form>
+             <!--RECOVER FORM-->
+             <form action="" method="POST">
+                    <h2>Recover form</h2>
+                    <fieldset>
+                        <legend class="hidden">recover form</legend>
+                        <!--pierwszy punkt formularza email-->
+                        <div class="input-wrapper">
+                            <label class="hidden" for="email">email</label>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <input type="email" id="email" name="user_email" placeholder="Enter Your Email">
+                        </div>
+                        <!--drugi punkt formularza telefon-->
+                        <div class="input-wrapper">
+                            <label class="hidden" for="tel">phone</label>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-mobile"></i>
+                            </div>
+                            <input type="tel" id="tel" name="user_phone" placeholder="Enter your Phone number">
+                        </div>
+                        <!--SEKCJA PRZYCISKOW-->
+                        <div class="button-wrapper">
+                            <button id="send_bt">Send</button>
+                            <button disabled class="button-inactive" id="done_bt">Done</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <!--SUBSRIBE FORM-->
+                <form action="" method="POST">
+                    <h2>Subscribe Fomr</h2>
+                    <fieldset>
+                        <legend class="hidden">subscribe form</legend>
+                        <!--PIERWSZY PUNKT EMAIL-->
+                        <div class="input-wrapper">
+                            <label class="hidden" for="email">email</label>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <input type="email" id="email" name="user_email" placeholder="Email">
+                        </div>
+                        <!--SEKCJA PRZYCISKOW-->
+                        <div class="button-wrapper">
+                            <button id="subscribe_bt">Subscribe</button>
+                            <button class="red-button" id="no_bt">No, thanks</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="footer">
+                    <img src="logo2.png" alt="" >
+                </div>
+        
+        </main>
+        <footer>
+                <
+        </footer>
+    </body>
+</html>

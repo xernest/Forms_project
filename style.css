@@ -1,0 +1,198 @@
+h2 {
+    font-weight: normal;
+    color: white;
+    margin-top: 25px;
+    text-align: center; 
+    
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 1200px;
+    
+}
+body{
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+.top_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+    
+}
+.hidden {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    position: absolute;
+    right: 20000px;
+  }
+  .icon-wrapper{
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      border-right: 2px solid  rgb(222, 222, 222);
+  }
+  .input-wrapper{
+      display:flex;
+      border: 2px solid rgb(222, 222, 222) ;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 15px;
+      }
+ 
+  form{
+      width:500px;
+      margin: 0 auto;
+      
+      
+      
+  }
+  fieldset{
+    background-color: rgb(244,244,244);
+    border: 15px solid rgba(0, 0, 0, 0.3) ; 
+    border-radius: 2px;
+    background-clip:padding-box; 
+}
+input{
+    background-color: rgb(244,244,244);
+    width: 100%;
+    border: none;
+    margin-left: 20px;
+}
+select{
+    background-color: rgb(244,244,244);
+    border:none;
+    width:100%;
+    margin-left: 20px;
+}
+
+.footer{
+    margin: 0 auto;
+    margin-top: 110px;
+    opacity: 0.4;
+}
+    /*początek konfiguracji checkboxow */
+.checkbox-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-wrapper * {
+    cursor: pointer;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    vertical-align: -7px;
+    padding: 3px;
+    margin-left: 15px;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #7ec31f;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 300ms;
+  }
+  
+  .checkbox-wrapper input[type="checkbox"]:checked::before {
+    opacity: 1;
+  }
+  /*koniec konfiguracji checkboxow */
+
+  textarea{
+      width: 405px;
+      height: 250px;
+      margin-left: 15px;
+      background-color: rgb(244,244,244);
+      border: 2px solid rgb(222, 222, 222) ;
+      border-radius: 5px;
+  }
+  button{
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: 1px, solid, rgb(59, 154, 0);
+    border-radius: 5px;
+    background-color: #7ec31f;
+
+  }
+  .button-block{
+      margin-left:15px;
+      width:412px;
+      height: 50px;
+      
+
+  }
+
+  
+  .button-inactive{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .button-wrapper {
+    
+    height: 50px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+  
+    
+
+  }
+  .red-button{
+    border: 1px solid #a2202a;
+    background: #f03747;
+
+  }
+
+  /* łopatologia na całego ale nie mam narazie pomysłów na to a chce skonczyc*/
+  #sign_bt{
+      width:200px;
+      margin-right: -60px;
+  }
+  #remember{
+      margin-left: -60px;
+      
+  }
+  #send_bt{
+    width: 200px;
+    margin-left: -60px;
+  }
+  #done_bt{
+    width: 200px;
+    margin-right: -60px;
+  }
+
+  #subscribe_bt{
+    width: 200px;
+    margin-left: -60px;
+  }
+  #no_bt{
+    width: 200px;
+    margin-right: -60px;
+  }
+  /* koniec tej łopatologi */
+  i{
+    color: rgb(222, 222, 222);
+    transform: scale(1.5);
+  }
